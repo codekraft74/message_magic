@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Massage magic</title>
+ 
+</head>
+<style>
+*{
+  padding: 0%;
+  margin: 0%;
+}
+body{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-align: center;
+ background-color: black;
+}
+header{
+  background: linear-gradient(red,rgb(89, 17, 206));
+  padding: 30px;
+  font-size: 25px;
+  color: orange;
+  
+}
+header:hover{
+  color: greenyellow;
+}
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  background: linear-gradient(90deg, #9c3b4b, #feb47b,rgb(30, 30, 167)); /* Gradient Colors */
+ -webkit-background-clip: text; /* Clip the background to the text */
+  -webkit-text-fill-color: transparent; /* Make the text transparent to show gradient */
+  margin: 20px;
+}
+
+.men{
+  background: linear-gradient(rgb(228, 241, 40),rgb(0, 92, 128));
+ 
+  text-align: center;
+  justify-content: center;
+ padding-top: 30px;
+ 
+ 
+  margin: 30px;
+}
+h3{
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+textarea{
+ padding: 20px;
+ border: 1px solid rgb(190, 43, 87);
+ border-radius: 10px;
+ text-align: center;
+ background-color: black;
+ color: azure;
+ width: 190px;
+
+}
+button{
+  margin: 20px;
+  width: 6vh;
+  padding: 5px;
+  font-size: 15px;
+  text-align: center;
+ background: linear-gradient(red,black);
+  border: 2px solid rgb(59, 53, 35);
+  border-radius: 5px;
+  color: greenyellow;
+}
+#so {
+  max-height: 200px; /* Set the max height for the message container */
+  overflow-y: auto;  /* Add vertical scrolling */
+  background: linear-gradient(rgb(251, 255, 0), rgb(158, 21, 176), rgb(255, 0, 111)); /* Matching gradient */
+  color: black; /* Text color for good visibility */
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-top: 10px;
+  white-space: pre-wrap; /* Preserve new lines */
+  border-radius: 10px; /* Add rounded corners */
+  text-align: center;
+  }
+
+p{
+
+  color: wheat;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.fe{
+  color: aqua;
+  text-align: left;
+ padding-top: 30px;
+ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+margin: 10px;
+
+}
+h5{
+  color: wheat;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+  padding: 5px;
+  margin: 20px;
+}
+
+</style>
+
+<body>
+
+<header>
+  <marquee behavior="" direction="right"> Message magic</marquee>
+</header>
+
+<h1>Welcome to Message magic</h1>
+
+
+ <div class="men">
+  
+  <textarea name="name" id="text" placeholder="enter your text"></textarea><br>
+  <input type="number" id="repeat" min="1" max="100" placeholder="time">
+  <button onclick="enter()">send</button>
+ <button id="copy-btn" onclick="copyText()">copy</button>
+ <h5 id="so"></h5>
+ </div>
+
+ <div class="para">
+  <h4>Welcome to Massage Magic!</h4>
+  <p>Here, your relaxation is in your hands. 
+    Simply input your personalized massage preferences and
+     decide how many
+     times you’d like the magic to repeat. Whether you’re looking for quick relief or an extended session of comfort, Massage Magic tailors the perfect solution for your needs.</p>
+ </div>
+
+<div class="fe">
+  <h2>Features:-</h2>
+</div>
+
+ <h5> 1. Custom Message Input:</h5>
+ <h5>2. Message Repetition:</h5>
+<h5>3. Dynamic Display:</h5>
+<h5>4. Copy Functionality:</h5>
+<h5>5. Interactive Design:</h5>
+<h5>6. Gradient Styling:</h5>
+<h5>7. Mobile-Friendly:</h5>
+<h5>8. Fun and Relaxing Theme:</h5>
+
+
+
+<footer style="background: #121212; color: white; padding: 40px 20px; font-family: Arial, sans-serif;">
+
+  <!-- Footer Container -->
+  <div style="max-width: 1200px; margin: auto; display: flex; flex-wrap: wrap; justify-content: space-between;">
+
+    <!-- About Section -->
+    <div style="flex: 1; min-width: 200px; margin-bottom: 20px;">
+      <h3 style="color: orange; border-bottom: 2px solid orange; display: inline-block; padding-bottom: 5px;">About Us</h3>
+      <p style="font-size: 0.9rem; line-height: 1.6; color: #ccc;">
+        Message Magic brings creativity and fun to messaging. Whether it’s quick messages or repetitive ones, we make your communication unique and enjoyable.
+      </p>
+    </div>
+
+    <!-- Quick Links Section -->
+   
+
+    <!-- Contact Info Section -->
+    <div style="flex: 1; min-width: 200px; margin-bottom: 20px;">
+      <h3 style="color: orange; border-bottom: 2px solid orange; display: inline-block; padding-bottom: 5px;">Contact Us</h3>
+      <p style="font-size: 0.9rem; color: #ccc;">Email: <a href="aanchaluke421@gmail.com" style="color: orange; text-decoration: none;">aanchaluke421@gmail.com</a></p>
+      <p style="font-size: 0.9rem; color: #ccc;">Phone: <a href="tel:+1234567890" style="color: orange; text-decoration: none;">9302984613</a></p>
+      <p style="font-size: 0.9rem; color: #ccc;">Location: ashoka garden ,Bhopal</p>
+    </div>
+
+    <!-- Social Media Section -->
+    <div style="flex: 1; min-width: 200px; margin-bottom: 20px; text-align: center;">
+      <h3 style="color: orange; border-bottom: 2px solid orange; display: inline-block; padding-bottom: 5px;">Follow Us</h3>
+      <div style="margin-top: 10px;">
+        <a href="https://facebook.com" target="_blank" style="margin: 0 10px;">
+          <img src="https://img.icons8.com/color/48/facebook.png" alt="Facebook" style="width: 30px;">
+        </a>
+        <a href="https://twitter.com" target="_blank" style="margin: 0 10px;">
+          <img src="https://img.icons8.com/color/48/twitter.png" alt="Twitter" style="width: 30px;">
+        </a>
+        <a href="https://www.instagram.com/kraft.code/profilecard/?igsh=MWZkOXJrcnI2bTd5Ng==" target="_blank" style="margin: 0 10px;">
+          <img src="https://img.icons8.com/color/48/instagram-new.png" alt="Instagram" style="width: 30px;">
+        </a>
+        <a href="https://youtube.com/@aanchaluke8000?si=O_bYKJK5OEx6TxDa" target="_blank" style="margin: 0 10px;">
+          <img src="https://img.icons8.com/color/48/youtube-play.png" alt="YouTube" style="width: 30px;">
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Bottom -->
+  <div style="text-align: center; margin-top: 20px; border-top: 1px solid #333; padding-top: 10px; font-size: 0.8rem; color: #777;">
+    &copy; 2024 <strong>Message Magic</strong>. All rights reserved. | <a href="#terms" style="color: orange; text-decoration: none;">Terms of Service</a> | <a href="#privacy" style="color: orange; text-decoration: none;">Privacy Policy</a>
+  </div>
+
+</footer>
+
+
+
+
+ <script>
+ function enter(){
+  let message = document.getElementById("text").value;
+  let time = document.getElementById("repeat").value;
+
+  if(message && time){
+    let display = "";
+    for (let i=1; i<= time; i++){
+      display +=message +'\n';
+    }
+
+    document.getElementById('so').innerHTML = display;
+    alert(`Message generated ${time} times successfully`);
+  } else {
+      alert("please enter a message and the number of time to print it..");
+
+    }
+
+  }
+
+
+  function copyText(){
+    let copyContant = document.getElementById("so").innerText;
+    if(copyContant) {
+      const tempTextArea =document.createElement("textarea");
+      tempTextArea.value = copyContant;
+      document.body.appendChild(tempTextArea);
+
+      tempTextArea.select();
+      tempTextArea.setSelectionRange(0, 99999);
+    
+    try{
+      document.execCommand("copy");
+      alert("Message copied");
+    } catch (err) {
+      alert("Failed to copy the message");
+    }
+document.body.removeChild(tempTextArea);
+
+  } else {
+    alert("There is no message to copy");
+
+   }
+
+ }
+
+
+
+ </script>
+
+</body>
+</html>
